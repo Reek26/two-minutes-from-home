@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout — Two Minutes from Home</title>
+  <meta name="description" content="Checkout for Two Minutes from Home, $4.99. Optional 72-Hour Tornado Plan, $7.">
+  <link rel="stylesheet" href="css/funnel.css">
+</head>
+<body class="funnel-page" data-page="checkout">
+  <div class="funnel-top">
+    <a class="wordmark" href="index.html">Two Minutes from Home</a>
+    <div class="steps">
+      <span class="on">Book</span>
+      <span>Audio</span>
+      <span>Prep</span>
+    </div>
+  </div>
+
+  <main class="panel">
+    <div class="wrap-checkout">
+      <p class="kicker">Checkout</p>
+      <h1 style="font-family:var(--font-display);font-weight:400;font-size:clamp(1.8rem,4vw,2.4rem);margin:0 0 1.4rem;">The ebook. Then the plan, if you want it.</h1>
+
+      <div class="order">
+        <img class="order-cover" src="assets/cover.jpg" width="660" height="1020" alt="Two Minutes from Home cover">
+        <div>
+          <div class="line">
+            <span>Two Minutes from Home — ebook</span>
+            <span>$4.99</span>
+          </div>
+          <div class="line" id="bump-line" hidden>
+            <span>72-Hour Tornado Plan — PDF</span>
+            <span>$7.00</span>
+          </div>
+          <div class="total">
+            <span>Total</span>
+            <span id="order-total">$4.99</span>
+          </div>
+
+          <label class="bump">
+            <input type="checkbox" id="bump" name="bump">
+            <span>
+              <strong>Add the 72-Hour Tornado Plan — $7</strong>
+              <p>Printable family checklist. Sirens, shelter, pets, water, power, go-bag. Fill it once. Put it on the fridge. Practical. Not a panic sheet.</p>
+            </span>
+          </label>
+
+          <button class="btn btn-lg btn-block" type="button" id="complete-order">Complete order — demo</button>
+          <p class="paypal-note">
+            Demo path: no charge. Walk the funnel, then replace the PayPal placeholder.<br>
+            PAYPAL_EMAIL=<code>evinternetholdings@gmail.com</code>
+          </p>
+
+          <!-- LIVE PAYPAL — uncomment and set return URLs when you are ready.
+               Use amount 4.99 without the bump, 11.99 with the bump, or a hosted button ID.
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_xclick">
+            <input type="hidden" name="business" value="evinternetholdings@gmail.com">
+            <input type="hidden" name="item_name" value="Two Minutes from Home — Ebook">
+            <input type="hidden" name="amount" value="4.99">
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="hidden" name="return" value="https://YOUR-DOMAIN/funnel/upsell-audio.html">
+            <input type="hidden" name="cancel_return" value="https://YOUR-DOMAIN/funnel/checkout.html">
+            <input type="hidden" name="no_shipping" value="1">
+            <button class="btn btn-lg btn-block" type="submit">Pay with PayPal — $4.99</button>
+          </form>
+          -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">Secure checkout placeholder · PayPal buy-now ready in the source</footer>
+  <script src="js/funnel.js"></script>
+</body>
+</html>

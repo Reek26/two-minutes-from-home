@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>You’re in — Two Minutes from Home</title>
+  <meta name="description" content="Order received. Check your email for Two Minutes from Home.">
+  <link rel="stylesheet" href="css/funnel.css">
+</head>
+<body class="funnel-page" data-page="thanks">
+  <div class="funnel-top">
+    <a class="wordmark" href="index.html">Two Minutes from Home</a>
+    <div class="steps">
+      <span>Book</span>
+      <span>Audio</span>
+      <span>Done</span>
+    </div>
+  </div>
+
+  <main class="panel">
+    <div class="wrap-narrow">
+      <p class="kicker">Order received</p>
+      <h1 style="font-family:var(--font-display);font-weight:400;font-size:clamp(1.9rem,4.5vw,2.6rem);margin:0 0 0.7rem;">You’re in.</h1>
+      <p class="dim">Check the email you used. The ebook comes there. If this was the demo click-through, nothing was charged and nothing was sent — that is expected.</p>
+
+      <div class="recap" id="recap-lines"></div>
+
+      <div class="dl" id="bump-download" hidden>
+        <strong>72-Hour Tornado Plan</strong>
+        <p class="dim" style="margin:0.4rem 0 0.8rem;">Print it. Fill the blanks. Put it on the fridge.</p>
+        <a class="btn" href="products/tornado_72_hour_plan.pdf">Download the PDF</a>
+        <a class="btn btn-ghost" href="products/plan.html" style="margin-top:.5rem">View the plan</a>
+      </div>
+
+      <p class="dim" id="audio-note" hidden>Audiobook: you are on the list for the finished file. No ship date. The SFX-bed sample can go out with the confirmation email once PayPal is live.</p>
+      <p class="dim" id="prep-note" hidden>Founding reader: your $9 locks the price on the prep book. You will hear when it is ready.</p>
+
+      <div class="share-box">
+        <label for="share-line">Short share line</label>
+        <div class="share-row">
+          <input id="share-line" type="text" readonly value="Two minutes from home. Temple, May 22, 2024. Short true story. $4.99.">
+          <button class="btn" type="button" id="copy-share">Copy</button>
+        </div>
+      </div>
+
+      <p style="margin-top:2rem;"><a href="index.html">Back to the sales page</a></p>
+    </div>
+  </main>
+
+  <footer class="site-footer">Two Minutes from Home · Eric · Temple, Texas</footer>
+  <script src="js/funnel.js"></script>
+</body>
+</html>
