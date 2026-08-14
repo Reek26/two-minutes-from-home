@@ -1,2 +1,1 @@
-# two-minutes-from-home
-Two Minutes from Home — sales funnel preview
+https://reek26.github.io/two-minutes-from-home/
